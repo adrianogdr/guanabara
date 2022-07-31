@@ -99,7 +99,6 @@
         echo '$m = ($x + $y) / 2;';
         $m = ($x + $y) / 2;
         echo "<br>A nota foi $m sendo que o minimo permitido é 6 situação do aluno é: " . ($m > 6 ? "APROVADO" : "REPROVADO");
-        echo "testando commit testando";
         ?>
     </div>
 
