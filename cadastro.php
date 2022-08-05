@@ -11,7 +11,7 @@
     $n=$_GET["nome"];
     $d=$_GET["data"];
     $s=$_GET["sexo"];
-    echo "<br>Meu nome é ".$n." e meu aniversário é dia ".$d." sou ".$s;
+    echo "Meu nome é ".$n." e meu aniversário é dia ".$d." sou ".$s;
     ?>
 </body>
 </html>
