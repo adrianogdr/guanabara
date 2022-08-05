@@ -3,3 +3,9 @@ h2{
     font: 20px arial;
     font-weight: bold;
 }
+
+fieldset#fieldset_sexo {
+    display: block;
+    width: 200px;
+    float:left;
+  }
