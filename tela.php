@@ -15,117 +15,39 @@
     Ctrl + Shft + L para locatilar e modificar todo o conteudo alvo semelhante
      -->
     <div>
-        <?php
-        $x = $_GET["a"];
-        $y = $_GET["b"];
-        echo "<h3>O valores recebidos insira no final da URL ?a=5&b=2&op=s que neste caso são: $x e $y</h3>";
-        echo "<h2>1- Qual sua idade?</h2>";
-        $n = 'Adriano';
-        $i = 33;
-        echo "$n tem $i anos.<br>";
-        ?>
-    </div>
-
-    <div>
-        <?php
-        /*echo "<h2>2- Operadores Matemáticos:</h2>";
-        $n1 = $_GET["a"];
-        $n2 = $_GET["b"];
-        echo "A soma é: " . $n1 + $n2 . ".<br>";
-        echo "A subtração é: " . $n1 - $n2 . ".<br>";
-        echo "A multiplicação é: " . $n1 * $n2 . ".<br>";
-        echo "A divisão é: " . $n1 / $n2 . ".<br>";
-        echo "O mod da divisão é: " . $n1 % $n2 . ".<br>";*/
-        ?>
-    </div>
-
-    <div>
-        <?php
-        /*echo "<h2>3- Funções matemáticas:</h2>";
-        echo "O valor absoluto de $y é: ".abs($y)."<br>";
-        echo "O valor $x<sup>$y</sup> é: ".pow($x,$y)."<br>";
-        echo "A raiz quadrada de $x e $y é: ".sqrt($x)." e ".sqrt($y)."<br>";
-        echo "O valor arredondado de ".sqrt($x)." é ".round(sqrt($x))."<br>";
-        echo "O valor inteiro do valor ".sqrt($y)." é ".intval(sqrt($y))."<br>";
-        echo "O valor $x formatado em reai é R$".number_format($x,2,",",".");*/
-        ?>
-    </div>
-
-    <div>
-        <?php
-        echo "<h2>4- Operadores de atribuição: ('+=', '-=', '*=', '/=', '%=', .=)</h2>";
-        echo "X = X + y ou X += Y";
-        ?>
-    </div>
-
-    <div>
-        <?php
-        /*
-        $preco = 100;
-        echo "<br>O preço do produto é R$".number_format($preco,2,",");
-        $preco+=$preco*10/100;
-        echo "<br>O novo preço com 10% de aumento é: R$".number_format($preco,2,",");
-        $preco=100;
-        $preco-=$preco*10/100;
-        echo "<br>O novo preço com 10% de desconto é: R$".number_format($preco,2,",");
-        echo "<br>Pré e Pós incremento: ++a ou a++";
-        echo "<br>Pré e Pós decremento: --a ou a--";*/
-        ?>
-    </div>
-    <div>
-        <?php
-        echo "<h2>5- Operadores Relacionaveis: Ex: <, >, <=, >=, <>, !=, == ou ===</h2>";
-        echo "<h2>6- Operadores Unário: Ex: (expressão ? verdadeiro : falso) sem o parenteses</h2>";
-        $x = $_GET["a"];
-        $y = $_GET["b"];
-        $tipo = $_GET["op"];
-        $r = $tipo == "s" ? $x + $y : $x - $y;
-        echo '$x = ' . $x . '<br>$y = ' . $y;
-        echo '<br>$tipo == "s" ? $x + $y : $x - $y<br>';
-        echo "O resultado é: " . $r . "<br><br>";
-
-        $a = 3;
-        $b = "3";
-        echo (var_dump($a)) . "<br>";
-        echo (var_dump($b)) . "<br>";
-        echo '$a = 3 e $b = "3"';
-        $r = $a === $b ? "SIM" : "NÃO";
-        echo "<br>As variaveis A e B são identicas? $r<br><br>";
-        
-        $x = $_GET["a"];
-        $y = $_GET["b"];
-        echo (var_dump($x)) . "<br>";
-        echo (var_dump($y)) . "<br>";
-        echo '$m = ($x + $y) / 2;';
-        $m = ($x + $y) / 2;
-        echo "<br>A nota foi $m sendo que o minimo permitido é 6 situação do aluno é: " . ($m > 6 ? "APROVADO" : "REPROVADO");
-        ?>
-    </div>
-    <div>
-        <?php
-        echo "<h2>7- Trabalhando com formularios: </h2>";
-        ?>
-        <form method="get" action="raiz.php">
-            <label for="idvalor">Valor:&nbsp</label>
-            <input type="number" id="idvalor" name="valor"/>
-            <input type="submit" value="Calcular"/>
+        <h2>Questão 1:</h2>
+        <form method="get" action="1.php">
+            <label>Que ano estamos?:<br><br></label>
+            <input type="date" placeholder="yyyy" name="data" />
+            <label><br><br>Digite seu nome:<br><br></label>
+            <input type="text" name="nome" />
+            <label><br><br>Digite seu ano de nascimento:<br><br></label>
+            <input style="width: 40px" type="number" name="nasc" />
+            <input type="submit" value="Enter" />
         </form>
     </div>
     <div>
-        <form method="get" action="cadastro.php">
-            <label><br>Nome:</label>
-            <input type="text" name="nome"/>
-            <label><br><br>Ano de Nascimento:</label>
-            <input type="date" name="data"/><br><br>
-            <fieldset id="fieldset_sexo">
-                <legend>Sexo</legend>
-                <input type="radio" id="masc" name="sexo" value="Homen" checked/>
-                <label for="masc">Masculino</label><br>
-                <input type="radio" id="fem" name="sexo" value="Mulher"/>
-                <label for="fem">Feminino</label>
-            </fieldset><br><br><br><br><br>
-            <input type=submit value="Enviar">
+        <h2><br>Questão 2:</h2>
+        <form method="get" action="2.php">
+            <label>Digite o 1° valor:</label>
+            <input type="number" name="a" />
+            <label><br><br>Digite o 2° valor:</label>
+            <input type="number" name="b" />
+            <input type="submit" value="Enter" /><br><br>
+            <fieldset style="width: 55%;">
+                <legend>Digite qual operação:</legend>
+                <input type="radio" name="op" value="+" />
+                <label>Soma</label>
+                <input type="radio" name="op" value="-" />
+                <label>Subtração</label>
+                <input type="radio" name="op" value="*" />
+                <label>Multiplicação</label>
+                <input type="radio" name="op" value="/" />
+                <label>Divisão</label>
+            </fieldset>
         </form>
     </div>
+
 </body>
+
 </html>
