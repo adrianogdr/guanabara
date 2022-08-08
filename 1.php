@@ -13,9 +13,9 @@
     <div>
         <?php
         $n = $_GET["nome"];
-        $a = $_GET["nasc"];
-        $i = (integer)$_GET["data"];
-        echo "Seu nome é ".$n." e sua idade é ".$i-$a." anos.";
+        $d = (integer)$_GET["data"];
+        $data = date('Y');
+        echo "Seu nome é ".$n." e sua idade é ".$data-$d." anos.";
         ?>
     </div>
 </body>

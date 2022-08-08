@@ -4,8 +4,16 @@ h2{
     font-weight: bold;
 }
 
-fieldset#fieldset_sexo {
+#fset {
     display: block;
-    width: 200px;
+    width: 400px;
     float:left;
-  }
+}
+
+#q1field{
+    width: 21%;
+}
+
+#elements{
+    padding: 5px;
+}

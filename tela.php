@@ -17,33 +17,45 @@
     <div>
         <h2>Questão 1:</h2>
         <form method="get" action="1.php">
-            <label>Que ano estamos?:<br><br></label>
-            <input type="date" placeholder="yyyy" name="data" />
-            <label><br><br>Digite seu nome:<br><br></label>
-            <input type="text" name="nome" />
-            <label><br><br>Digite seu ano de nascimento:<br><br></label>
-            <input style="width: 40px" type="number" name="nasc" />
-            <input type="submit" value="Enter" />
+            <fieldset id="q1field">
+                <div id="elements">
+                    <label>Digite seu nome:</label>
+                    <input type="text" name="nome" placeholder="Jose da Silva..." />
+                </div>
+                <div id="elements">
+                    <label>Selecione a data de nascimento:</label>
+                    <input type="date" name="data" />
+                    <input type="submit" value="Enter" />
+                </div>
+            </fieldset>
         </form>
     </div>
     <div>
         <h2><br>Questão 2:</h2>
         <form method="get" action="2.php">
-            <label>Digite o 1° valor:</label>
-            <input type="number" name="a" />
-            <label><br><br>Digite o 2° valor:</label>
-            <input type="number" name="b" />
-            <input type="submit" value="Enter" /><br><br>
-            <fieldset style="width: 55%;">
-                <legend>Digite qual operação:</legend>
-                <input type="radio" name="op" value="+" />
-                <label>Soma</label>
-                <input type="radio" name="op" value="-" />
-                <label>Subtração</label>
-                <input type="radio" name="op" value="*" />
-                <label>Multiplicação</label>
-                <input type="radio" name="op" value="/" />
-                <label>Divisão</label>
+            <fieldset id="fset">
+                <legend>Calculadora</legend>
+                <div id="elements">
+                    <label>1° valor:</label>
+                    <!-- Este input usa type="text" para permitir inserir numeros descimais e serem convertidos na 2.php-->
+                    <input type="text" name="a" style="width: 100px;" />
+                </div>
+                <div id="elements">
+                    <label>2° valor:</label>
+                    <!-- Este input usa type="text" para permitir inserir numeros descimais e serem convertidos na 2.php-->
+                    <input type="text" name="b" style="width: 100px;" />
+                    <input type="submit" value="Enter" />
+                </div>
+                <div id="elements">
+                    <input type="radio" name="op" value="+" />
+                    <label>Soma</label>
+                    <input type="radio" name="op" value="-" />
+                    <label>Subtração</label>
+                    <input type="radio" name="op" value="*" />
+                    <label>Multiplicação</label>
+                    <input type="radio" name="op" value="/" />
+                    <label>Divisão</label>
+                </div>
             </fieldset>
         </form>
     </div>
