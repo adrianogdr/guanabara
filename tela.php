@@ -17,12 +17,13 @@
     <div>
         <h2>Questão 1:</h2>
         <form method="get" action="1.php">
-            <fieldset id="q1field">
-                <div id="elements">
+            <fieldset id="fset">
+                <div>
                     <label>Digite seu nome:</label>
-                    <input type="text" name="nome" placeholder="Jose da Silva..." />
+                    <input type="text" name="nome" placeholder="Jose da Silva..." style="width: 250px;"/>
                 </div>
-                <div id="elements">
+                <br>
+                <div>
                     <label>Selecione a data de nascimento:</label>
                     <input type="date" name="data" />
                     <input type="submit" value="Enter" />
@@ -31,22 +32,23 @@
         </form>
     </div>
     <div>
-        <h2><br>Questão 2:</h2>
+        <h2><br><br><br><br>Questão 2:</h2>
         <form method="get" action="2.php">
             <fieldset id="fset">
                 <legend>Calculadora</legend>
-                <div id="elements">
+                <div>
                     <label>1° valor:</label>
                     <!-- Este input usa type="text" para permitir inserir numeros descimais e serem convertidos na 2.php-->
                     <input type="text" name="a" style="width: 100px;" />
                 </div>
-                <div id="elements">
+                <div>
                     <label>2° valor:</label>
                     <!-- Este input usa type="text" para permitir inserir numeros descimais e serem convertidos na 2.php-->
                     <input type="text" name="b" style="width: 100px;" />
                     <input type="submit" value="Enter" />
                 </div>
-                <div id="elements">
+                <br>
+                <div>
                     <input type="radio" name="op" value="+" />
                     <label>Soma</label>
                     <input type="radio" name="op" value="-" />
@@ -60,6 +62,23 @@
         </form>
     </div>
 
+    <div>
+        <h2><br><br><br><br><br><br>Questão 3:</h2>
+        <form method="get" action="3.php">
+            <fieldset id="fset">
+                <label>Valor do produto em R$:</label>
+                <input style="width: 100px;" type="text" name="produt" placeholder="0.00"/>
+                <label>%:</label>
+                <input style="width: 30px;" type="number" name="percent"/>
+                <br><br>
+                <input type="radio" name="bonus" value="up"/>
+                <label>Aumento</label>
+                <input type="radio" name="bonus" value="down"/>
+                <label>Desconto</label>
+                <input type="submit" value="Enter"/>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
