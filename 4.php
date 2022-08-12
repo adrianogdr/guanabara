@@ -11,31 +11,16 @@
 <body>
     <div>
         <?php
-        echo "<h2>5- Operadores Relacionaveis: Ex: <, >, <=, >=, <>, !=, == ou ===</h2>";
-        echo "<h2>6- Operadores Unário: Ex: (expressão ? verdadeiro : falso) sem o parenteses</h2>";
-        $x = $_GET["a"];
-        $y = $_GET["b"];
-        $tipo = $_GET["op"];
-        $r = $tipo == "s" ? $x + $y : $x - $y;
-        echo '$x = ' . $x . '<br>$y = ' . $y;
-        echo '<br>$tipo == "s" ? $x + $y : $x - $y<br>';
-        echo "O resultado é: " . $r . "<br><br>";
-
-        $a = 3;
-        $b = "3";
-        echo (var_dump($a)) . "<br>";
-        echo (var_dump($b)) . "<br>";
-        echo '$a = 3 e $b = "3"';
-        $r = $a === $b ? "SIM" : "NÃO";
-        echo "<br>As variaveis A e B são identicas? $r<br><br>";
-
-        $x = $_GET["a"];
-        $y = $_GET["b"];
-        echo (var_dump($x)) . "<br>";
-        echo (var_dump($y)) . "<br>";
-        echo '$m = ($x + $y) / 2;';
-        $m = ($x + $y) / 2;
-        echo "<br>A nota foi $m sendo que o minimo permitido é 6 situação do aluno é: " . ($m > 6 ? "APROVADO" : "REPROVADO");
+        $text = $_GET["n"];
+        echo "Variavel como escrita: ";
+        var_dump($text);
+        $igual = (integer)$text;
+        echo "<br>Variavel como texto: ";
+        var_dump($igual);
+        $retVal = ($igual === $text) ? "SIM" : "NAO";
+        echo "<br>Usando '===' as variaveis são idênticas? ".$retVal;
+        $retVal = ($igual == $text) ? "SIM" : "NAO";
+        echo "<br>Usando '==' as variaveis são iguais? ".$retVal;
         ?>
     </div>
 </body>

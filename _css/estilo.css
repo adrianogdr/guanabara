@@ -6,11 +6,36 @@ h2{
 
 #fset {
     display: block;
-    width: 400px;
+    width: 380px;
     float:left;
+    padding: 10px;
 }
 
 label{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+#enter{
+    float: right;
+}
+
+#fset_sexo{
+    width: 200px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

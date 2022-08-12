@@ -5,20 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/estilo.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <div>
-        <?php
-        echo "<h2>7- Trabalhando com formularios: </h2>";
-        ?>
-        <form method="get" action="raiz.php">
-            <label for="idvalor">Valor:&nbsp</label>
-            <input type="number" id="idvalor" name="valor" />
-            <input type="submit" value="Calcular" />
-        </form>
-    </div>
+    <?php
+    $nome = $_GET["nome"];
+    $data = $_GET["data"];
+    $sexo = $_GET["sexo"];
+    echo "<h2>Cadastrado:</h2>";
+    ?>
+    <table>
+        <tr>
+            <th>NOME</th>
+            <th>DATA DE NASCIMENTO</th>
+            <th>SEXO</th>
+        </tr>
+        <tr>
+            <td><?php echo $nome; ?></td>
+            <td><?php echo $data; ?></td>
+            <td><?php echo $sexo; ?></td>
+        </tr>
+    </table>
 </body>
 
 </html>
