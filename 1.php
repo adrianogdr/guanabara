@@ -18,6 +18,10 @@
         echo "Seu nome é ".$n." e sua idade é ".$data-$d." anos.";
         ?>
     </div>
+    <form method="POST" action="tela.php">
+        <br>
+        <input class="botao" type="submit" name="voltar" value="Back"/>
+    </form>
 </body>
 
 </html>

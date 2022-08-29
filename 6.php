@@ -12,6 +12,7 @@
 <body>
     <?php
     $idade = $_GET["idade"];
+    echo "Você tem $idade<br>";
     if ($idade>=16 && $idade<18) {
         echo "Voto opcional!";
         echo "<br>Não pode dirigir!";
@@ -26,6 +27,10 @@
         echo "<br>Não pode dirigir!";
     }
     ?>
+    <form method="POST" action="tela.php">
+        <br>
+        <input class="botao" type="submit" name="voltar" value="Back"/>
+    </form>
 </body>
 
 </html>

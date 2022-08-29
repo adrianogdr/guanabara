@@ -1,46 +1,86 @@
-h2{
-    color: rgb(47, 47, 214);
-    font: 20px arial;
-    font-weight: bold;
-    text-align:center;
+h2 {
+  color: rgb(47, 47, 214);
+  font: 20px arial;
+  font-weight: bold;
 }
 
-#fset {
-    display: block;
-    width: 380px;
-    float:left;
-    padding: 10px;
+label {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-label{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#enter{
-    float: right;
-}
-
-#fset_sexo{
-    width: 200px;
+.botao {
+  float: right;
+  height: 25px;
+  margin-left: 10px;
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  body{
-    display: flex;
-  }
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  display: flex;
+}
+
+.container{
+  width: 50%;
+  background-color: rgb(218, 218, 218);
+}
+
+.flexivel{
+  display: flex;
+}
+
+.horizontal{
+  flex-direction: row;
+}
+
+.vertical{
+  flex-direction: column;
+}
+
+.quebra{
+  flex-wrap: wrap;
+}
+
+.centralizar{
+  text-align: center;
+}
+
+form{
+  text-align: left;
+}
+
+.fcinza{
+  background-color: gray;
+}
+
+.fverde{
+  background-color: rgb(108, 158, 42);
+}
+
+.fazul{
+  background-color: aqua;
+}
+
+fieldset{
+  border-color: rgb(168, 26, 26);
+}
+
+legend{
+  margin-bottom: 20px;
+}

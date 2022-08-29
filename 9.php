@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    
+<form method="POST" action="tela.php">
+        <br>
+        <input class="botao" type="submit" name="voltar" value="Back"/>
+    </form> 
 </body>
 </html>

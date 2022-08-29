@@ -15,6 +15,10 @@
     $s = $_GET["sexo"];
     echo "Meu nome é " . $n . " e meu aniversário é dia " . $d . " sou " . $s;
     ?>
+    <form method="POST" action="tela.php">
+        <br>
+        <input class="botao" type="submit" name="voltar" value="Back"/>
+    </form>
 </body>
 
 </html>

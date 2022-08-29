@@ -16,6 +16,10 @@
     echo "Digitou o valor $valor<br>";
     echo "A raiz quadrada de $valor é: " . number_format($rq, 2, ",");
     ?>
+    <form method="POST" action="tela.php">
+        <br>
+        <input type="submit" name="voltar" value="Back"/>
+    </form>
 </body>
 
 </html>
